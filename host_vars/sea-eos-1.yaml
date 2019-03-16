@@ -29,6 +29,11 @@ loopback_interfaces:
     routed:
       ip: 10.255.255.1/32
 
+  Loopback1:
+    description: sea-eos-1 Loopback1 for Demo!
+    routed:
+      ip: 10.255.1.2/32
+
 ospf_interfaces:
   ospf_Ethernet1:
     passive: true
@@ -43,6 +48,9 @@ ospf_interfaces:
     area: 0.0.0.0
     type: point-to-point
   ospf_Loopback0:
+    passive: true
+    area: 0.0.0.0
+  ospf_Loopback1:
     passive: true
     area: 0.0.0.0
 
